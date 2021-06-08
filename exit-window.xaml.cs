@@ -10,33 +10,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Sklad
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для exit_window.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class exit_window : Window
     {
-        public MainWindow()
+        public exit_window()
         {
             InitializeComponent();
-            openpage.MainFrame = main;
-
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            exit_window exit_win = new exit_window();
-            exit_win.Show();
-
+            Application.Current.Shutdown();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            main.Navigate(new helppage());
+            Close();
         }
     }
 }

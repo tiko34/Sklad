@@ -1,0 +1,167 @@
+﻿<Page x:Class="Sklad.helppage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sklad"
+      mc:Ignorable="d" 
+      d:DesignHeight="569" d:DesignWidth="642"
+      Title="Справка">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="265*"/>
+            <RowDefinition Height="304*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.RowSpan="2">
+            <Border Background="Bisque"/>
+        </Grid>
+        <Image 
+                HorizontalAlignment="Left"
+                Height="102"
+                Margin="75,5,0,0"
+                VerticalAlignment="Top"
+                Width="75"
+                Source="/Resources/Kurisu_Makise(102x143).png"/>
+        <Grid Margin="0,30,42,135" HorizontalAlignment="Right" Width="260">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image
+                    Height="100" 
+                    ToolTip="Нажми на меня"
+                    Margin="160,0,0,0"
+                    VerticalAlignment="Top"
+                    Source="/Resources/Octocat.png"
+                MouseDown="Image_MouseDown"/>
+            <TextBlock  
+                    TextWrapping="Wrap"
+                    Text="С исходниками проекта можно ознакомиться по клику --------&gt;"          
+                    VerticalAlignment="Top"
+                    Margin="0,38,90,0"/>
+        </Grid>
+        <TextBlock
+                HorizontalAlignment="Left"  
+                TextWrapping="Wrap"
+                Text="Курсовой проект студента группы 531 Тихонкова Михаила Дмитриевича"          
+                VerticalAlignment="Top"
+                Margin="10,112,0,0" Width="215"/>
+        <TextBlock  
+                TextWrapping="Wrap"
+                Text="Помощь проекту оказали: "
+                Margin="210,30,211,214" Grid.Row="1" RenderTransformOrigin="0.634,0.507" FontSize="20" TextAlignment="Center">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.977"/>
+                    <TranslateTransform X="-0.149" Y="2.568"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Grid Margin="0,155,32,10" HorizontalAlignment="Right" Width="294">
+            <Image
+                    ToolTip="Клик!"
+                    Margin="185,0,0,0"
+                    Source="Resources/Logo.png" 
+                MouseDown="Image_MouseDown_1"
+                HorizontalAlignment="Left"
+                Width="80"
+                Height="90"
+                VerticalAlignment="Top" RenderTransformOrigin="0.8,0.578"/>
+            <TextBlock  
+                    TextWrapping="Wrap"
+                    Text="Связь с разработчиком --------&gt;"
+                    Margin="10,46,105,19"/>
+        </Grid>
+        <Image 
+                HorizontalAlignment="Left"
+                Height="100"
+                ToolTip="Алфёров Роман Генадьевич"
+                Margin="85,30,0,0"
+                VerticalAlignment="Top"
+                Width="100"
+                Source="Resources/roma.png" Grid.Row="1"/>
+        <TextBlock
+                HorizontalAlignment="Left"  
+                TextWrapping="Wrap"
+                Text="Дизайн: "              
+                VerticalAlignment="Top"
+                Margin="60,14,0,0"
+                Width="50"
+                RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-15.549999999999999"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Image 
+                    ToolTip="Плетнёв Денис Олегович"
+                    Source="Resources/ogimage-1024x623.png"
+                RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="151" Margin="0,145,46,67" Grid.Row="1">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="6.701"/>
+                    <TranslateTransform X="-0.102" Y="-0.018"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Grid Margin="116,151,357,29" Grid.Row="1">
+            <TextBlock  
+                    TextWrapping="Wrap"
+                    Text="Помощь с кодом программы:"
+                    RenderTransformOrigin="0.5,0.5" Margin="0,0,0,89">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="6.004"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <Image
+                    Height="100"
+                    ToolTip="Салейчук Евгения Германовна"
+                    Margin="0,29,0,0"
+                    VerticalAlignment="Top"
+                    Source="/Resources/adc9edfcaaa0e1163069fbc90189f1b1.jpg" 
+                    RenderTransformOrigin="0.558,0.71"
+                Stretch="Fill"
+                HorizontalAlignment="Left"
+                Width="100">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="7.454"/>
+                        <TranslateTransform X="-0.812" Y="-1.026"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+        </Grid>
+        <TextBlock  
+                    TextWrapping="Wrap"
+                    Text="Консультирование по построению базы данных:" 
+                    RenderTransformOrigin="0.5,0.5"
+                    Margin="0,110,7,0" 
+                    Height="40"
+                    VerticalAlignment="Top" Grid.Row="1" HorizontalAlignment="Right" Width="272">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-2.178"/>
+                    <TranslateTransform X="0.237" Y="0.029"/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+    </Grid>
+</Page>
