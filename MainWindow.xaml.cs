@@ -38,5 +38,10 @@ namespace Sklad
         {
             main.Navigate(new helppage());
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            main.Navigate(new sale());
+        }
     }
 }

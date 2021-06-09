@@ -1,0 +1,25 @@
+﻿<Page x:Class="Sklad.sale"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sklad"
+      mc:Ignorable="d" 
+      d:DesignHeight="569" d:DesignWidth="642"
+      Title="Продажа">
+
+    <Grid>
+        <Button 
+            HorizontalAlignment="Left"
+            Margin="10,10,0,0"
+            ToolTip="Нажмите если клиент отсутствует в базе данных"
+            VerticalAlignment="Top"
+            Width="120" Height="25">
+            <TextBlock 
+                Text="Регистрация клиента"
+                TextWrapping="Wrap" >
+
+            </TextBlock>
+        </Button>
+    </Grid>
+</Page>

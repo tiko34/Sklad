@@ -22,13 +22,16 @@
             Height="25"
             VerticalAlignment="Bottom">
             <TextBlock 
-                Text="Склад">
+                Text="Учёт товара">
             </TextBlock>
         </Button>
         <Button 
-            Margin="10,0,10,99" Height="25" VerticalAlignment="Bottom">
+            Margin="10,0,10,99"
+            Click="Button_Click_2"
+            Height="25"
+            VerticalAlignment="Bottom">
             <TextBlock 
-                Text="Продажа">
+                Text="Торговля">
             </TextBlock>
         </Button>
         <Button 
