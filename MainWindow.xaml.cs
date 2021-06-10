@@ -22,9 +22,11 @@ namespace Sklad
     {
         public MainWindow()
         {
+            
             InitializeComponent();
             openpage.MainFrame = main;
-
+        //    date.Text = Convert.ToString(DateTime.Now.ToString("Дата: dd.MM.yyyy"));
+         //   time.Text = Convert.ToString(DateTime.Now.ToString("Время: HH.mm"));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -51,6 +53,12 @@ namespace Sklad
             MainWindow.GetWindow(main).Title = "Оптовый склад->Клиенты";
             main.Navigate(new infoclient());
             
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            MainWindow.GetWindow(main).Title = "Оптовый склад->Номенклатура";
+            main.Navigate(new uchet());
         }
     }
 }

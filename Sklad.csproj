@@ -86,6 +86,9 @@
     <Compile Include="sale.xaml.cs">
       <DependentUpon>sale.xaml</DependentUpon>
     </Compile>
+    <Compile Include="uchet.xaml.cs">
+      <DependentUpon>uchet.xaml</DependentUpon>
+    </Compile>
     <Page Include="exit-window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -121,6 +124,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="sale.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="uchet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
