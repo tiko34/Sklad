@@ -77,6 +77,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="infoclient.xaml.cs">
+      <DependentUpon>infoclient.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="regclient.xaml.cs">
+      <DependentUpon>regclient.xaml</DependentUpon>
+    </Compile>
     <Compile Include="sale.xaml.cs">
       <DependentUpon>sale.xaml</DependentUpon>
     </Compile>
@@ -85,6 +91,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="helppage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="infoclient.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -106,6 +116,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="regclient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="sale.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

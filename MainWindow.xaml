@@ -22,7 +22,7 @@
             Height="25"
             VerticalAlignment="Bottom">
             <TextBlock 
-                Text="Учёт товара">
+                Text="Номенклатура">
             </TextBlock>
         </Button>
         <Button 
@@ -51,6 +51,14 @@
 
 
         <Frame  x:Name="main" Grid.Column="2" NavigationUIVisibility="Hidden"></Frame>
+        <Button 
+            Click="Button_Click_3"
+            Margin="10,0,10,189"
+            Height="25"
+            VerticalAlignment="Bottom">
+            <TextBlock 
+                Text="Клиенты"/>
+        </Button>
     </Grid>
 
 </Window>

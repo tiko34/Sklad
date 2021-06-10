@@ -9,17 +9,71 @@
       Title="Продажа">
 
     <Grid>
+        <ComboBox 
+          
+            ToolTip="Выберите клиента" 
+            Margin="270,13,10,0"
+            VerticalAlignment="Top" IsReadOnly="True" SelectedIndex="0"/>
         <Button 
-            HorizontalAlignment="Left"
-            Margin="10,10,0,0"
-            ToolTip="Нажмите если клиент отсутствует в базе данных"
-            VerticalAlignment="Top"
-            Width="120" Height="25">
-            <TextBlock 
-                Text="Регистрация клиента"
-                TextWrapping="Wrap" >
-
-            </TextBlock>
+         
+            HorizontalAlignment="Right" Margin="0,0,10,10" Width="130" Height="20" VerticalAlignment="Bottom">
+            <TextBlock Text="Оформление" ></TextBlock>
         </Button>
+        <DataGrid 
+          
+            x:Name="tabletovar"    
+                    AutoGenerateColumns="False"
+            Margin="10,40,10,35">
+            <DataGrid.Columns >
+                <DataGridTextColumn 
+                    IsReadOnly="True"
+                    Header="№"
+                                    Binding="{Binding Name}"
+                                    Width="100">
+
+                </DataGridTextColumn>
+                <DataGridTextColumn 
+                    IsReadOnly="True"
+                    Header="Название"
+                                    Binding="{Binding Name}"
+                                    Width="*">
+
+                </DataGridTextColumn>
+                <DataGridTextColumn 
+                    IsReadOnly="True"
+                    Header="Кол-во"
+                                    Binding="{Binding Name}"
+                                    Width="100">
+
+                </DataGridTextColumn>
+                <DataGridTextColumn 
+                    IsReadOnly="True"
+                    Header="ЕдИзм"
+                                    Binding="{Binding Name}"
+                                    Width="70">
+
+                </DataGridTextColumn>
+                <DataGridTemplateColumn Header="Наличие" Width="70">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox >
+
+                            </CheckBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Выбор" Width="70">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox x:Name="chktovar"  >
+
+                            </CheckBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+
+
+        </DataGrid>
     </Grid>
 </Page>

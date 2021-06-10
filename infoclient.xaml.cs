@@ -16,17 +16,19 @@ using System.Windows.Shapes;
 namespace Sklad
 {
     /// <summary>
-    /// Логика взаимодействия для sale.xaml
+    /// Логика взаимодействия для infoclient.xaml
     /// </summary>
-    public partial class sale : Page
+    public partial class infoclient : Page
     {
-        public sale()
+        public infoclient()
         {
             InitializeComponent();
         }
 
-        
-
-       
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.GetWindow(openpage.MainFrame).Title = "Оптовый склад->Клиенты->Регистрация клиента";
+            openpage.MainFrame.Navigate(new regclient());
+        }
     }
 }

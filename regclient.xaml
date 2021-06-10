@@ -1,0 +1,63 @@
+﻿<Page x:Class="Sklad.regclient"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sklad"
+      mc:Ignorable="d" 
+     d:DesignHeight="569" d:DesignWidth="642"
+      Title="Регистрация клиента">
+
+    <Grid>
+        <Viewbox Height="24" HorizontalAlignment="Left" Width="110" VerticalAlignment="Top" Margin="40,23,0,0" Stretch="UniformToFill">
+            <Label  >
+                <TextBlock Text="Название компании" Width="115" TextAlignment="Center"/>
+            </Label>
+
+        </Viewbox>
+
+        <TextBox x:Name="innbox" Margin="160,140,362,0" Height="20" VerticalAlignment="Top"   TextChanged="TextBox_TextChanged"/>
+
+        <TextBox x:Name="addressbox" Margin="160,100,362,0" Height="20" VerticalAlignment="Top"/>
+        <TextBox x:Name="namebox" Margin="160,20,362,0" Height="20" VerticalAlignment="Top"/>
+        <TextBox x:Name="phonebox" Margin="160,60,362,0" Height="20" VerticalAlignment="Top" TextChanged="phonebox_TextChanged" IsEnabled="True" IsReadOnly="False"/>
+
+
+        <TextBox  Margin="160,180,362,0" Height="20" VerticalAlignment="Top"/>
+
+        <Viewbox Height="24" HorizontalAlignment="Left" Width="105" VerticalAlignment="Top" Margin="50,63,0,0" Stretch="UniformToFill">
+            <Label  >
+                <TextBlock Text="Номер для связи" Width="115" TextAlignment="Center"/>
+            </Label>
+
+        </Viewbox>
+        <Viewbox Height="24" HorizontalAlignment="Left" Width="120" VerticalAlignment="Top" Margin="35,103,0,0" Stretch="UniformToFill">
+
+            <Label  >
+                <TextBlock Text="Юридический адрес"  TextAlignment="Center" Width="120"/>
+            </Label>
+        </Viewbox>
+
+        <Viewbox Height="24" HorizontalAlignment="Left" Width="95" VerticalAlignment="Top" Margin="65,143,0,0">
+            <Label >
+                <TextBlock 
+                Text="Номер ИНН" TextAlignment="Center"/>
+            </Label>
+
+        </Viewbox>
+
+        <Viewbox Margin="35,186,0,0" Height="20" HorizontalAlignment="Left" Width="120" VerticalAlignment="Top" Stretch="Fill">
+
+            <Label>
+                <TextBlock Text="Адрес электронной почты"  TextAlignment="Center"></TextBlock>
+            </Label>
+        </Viewbox >
+        <Button Margin="160,220,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Click="Button_Click">
+            <Viewbox Height="20">
+                <TextBlock Text="Регистрация"></TextBlock>
+            </Viewbox>
+        </Button>
+
+
+    </Grid>
+</Page>

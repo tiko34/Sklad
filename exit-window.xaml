@@ -11,7 +11,8 @@
         Title="Выход"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
-        WindowStyle="ThreeDBorderWindow">
+        WindowStyle="ThreeDBorderWindow"
+        >
          
     <Grid  >
        

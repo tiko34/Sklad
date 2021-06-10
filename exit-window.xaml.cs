@@ -22,6 +22,7 @@ namespace Sklad
         public exit_window()
         {
             InitializeComponent();
+            MainWindow.GetWindow(openpage.MainFrame).IsEnabled = false;
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -30,6 +31,7 @@ namespace Sklad
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            MainWindow.GetWindow(openpage.MainFrame).IsEnabled = true;
             Close();
         }
     }
