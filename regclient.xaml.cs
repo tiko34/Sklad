@@ -67,11 +67,15 @@ namespace Sklad
         {
             if (namebox.Text.Length == 0 || addressbox.Text.Length == 0 || phonebox.Text.Length==0)
             {
-                MessageBox.Show("Не все поля заполнены!","Внимание",MessageBoxButton.OK);
+                MessageBox.Show("Не все поля заполнены!", "Внимание", MessageBoxButton.OK);
             }
-            if (innbox.Text.Length <12)
+           else 
             {
-                MessageBox.Show("Неполный номер ИНН", "Внимание", MessageBoxButton.OK);
+                if (innbox.Text.Length < 12)
+                {
+ MessageBox.Show("Неполный номер ИНН", "Внимание", MessageBoxButton.OK);
+                }
+                   
             }
         }
     }

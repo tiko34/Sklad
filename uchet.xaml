@@ -9,6 +9,11 @@
       Title="Учёт">
 
     <Grid>
-        
+        <Button  HorizontalAlignment="Left" Margin="25,10,0,0" VerticalAlignment="Top" Width="145">
+            <TextBlock Text="Приход">
+
+            </TextBlock>
+        </Button>
+
     </Grid>
 </Page>
