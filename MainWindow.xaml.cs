@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Shell;
 
 namespace Sklad
 {
@@ -25,14 +26,16 @@ namespace Sklad
             
             InitializeComponent();
             openpage.MainFrame = main;
+            
         //    date.Text = Convert.ToString(DateTime.Now.ToString("Дата: dd.MM.yyyy"));
-         //   time.Text = Convert.ToString(DateTime.Now.ToString("Время: HH.mm"));
+        //   time.Text = Convert.ToString(DateTime.Now.ToString("Время: HH.mm"));
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            exit_window exit_win = new exit_window();
-            exit_win.Show();
+            this.Hide();
+            auth maibackn = new auth();
+            maibackn.Show();
 
         }
 

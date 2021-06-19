@@ -77,6 +77,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="auth.xaml.cs">
+      <DependentUpon>auth.xaml</DependentUpon>
+    </Compile>
     <Compile Include="infoclient.xaml.cs">
       <DependentUpon>infoclient.xaml</DependentUpon>
     </Compile>
@@ -89,6 +92,10 @@
     <Compile Include="uchet.xaml.cs">
       <DependentUpon>uchet.xaml</DependentUpon>
     </Compile>
+    <Page Include="auth.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="exit-window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

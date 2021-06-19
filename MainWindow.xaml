@@ -43,7 +43,7 @@
             Click="Button_Click"
             Margin="10,0,10,10" Height="25" VerticalAlignment="Bottom">
             <TextBlock 
-                Text="Выход">
+                Text="Сменить оператора">
             </TextBlock>
         </Button>
         <Button       
