@@ -59,19 +59,6 @@
                 Width="80"
                 Height="90"
                 VerticalAlignment="Top" />
-
-        <Image
-                Height="100"
-                ToolTip="Алфёров Роман Генадьевич"
-                Margin="0,431,122,0"
-                VerticalAlignment="Top"
-                Source="Resources/roma.png" HorizontalAlignment="Right" Width="100"/>
-        <TextBlock  
-                TextWrapping="Wrap"
-                Text="Дизайн: "              
-                VerticalAlignment="Top"
-                Margin="0,410,142,0"
-                RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="50"/>
         <Image 
                     ToolTip="Плетнёв Денис Олегович"
                     Source="Resources/ogimage-1024x623.png"
