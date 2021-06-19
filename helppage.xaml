@@ -9,13 +9,24 @@
       Title="Справка">
 
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="265*"/>
-            <RowDefinition Height="304*"/>
-        </Grid.RowDefinitions>
-        <Grid Grid.RowSpan="2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid>
             <Border Background="Bisque"/>
         </Grid>
+
+
+
+        <Image
+                    
+                    ToolTip="Нажмите сюда что бы ознакомиться с исходниками"
+                   
+                    VerticalAlignment="Top"
+                    Source="/Resources/Octocat.png"
+                MouseDown="Image_MouseDown" Height="100" Margin="10,170,0,0" HorizontalAlignment="Left" Width="105"  />
+
         <Image 
                 HorizontalAlignment="Left"
                 Height="102"
@@ -23,23 +34,9 @@
                 VerticalAlignment="Top"
                 Width="75"
                 Source="/Resources/Kurisu_Makise(102x143).png"/>
-        <Grid Margin="0,30,42,135" HorizontalAlignment="Right" Width="260">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Image
-                    Height="100" 
-                    ToolTip="Нажми на меня"
-                    Margin="160,0,0,0"
-                    VerticalAlignment="Top"
-                    Source="/Resources/Octocat.png"
-                MouseDown="Image_MouseDown"/>
-            <TextBlock  
-                    TextWrapping="Wrap"
-                    Text="С исходниками проекта можно ознакомиться по клику --------&gt;"          
-                    VerticalAlignment="Top"
-                    Margin="0,38,90,0"/>
-        </Grid>
+
+
+
         <TextBlock
                 HorizontalAlignment="Left"  
                 TextWrapping="Wrap"
@@ -49,119 +46,67 @@
         <TextBlock  
                 TextWrapping="Wrap"
                 Text="Помощь проекту оказали: "
-                Margin="210,30,211,214" Grid.Row="1" RenderTransformOrigin="0.634,0.507" FontSize="20" TextAlignment="Center">
-            <TextBlock.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="4.977"/>
-                    <TranslateTransform X="-0.149" Y="2.568"/>
-                </TransformGroup>
-            </TextBlock.RenderTransform>
+                Margin="0,12,10,0" FontSize="20" TextAlignment="Center" HorizontalAlignment="Right" Width="311" Height="53" VerticalAlignment="Top">
+
         </TextBlock>
-        <Grid Margin="0,155,32,10" HorizontalAlignment="Right" Width="294">
-            <Image
-                    ToolTip="Клик!"
-                    Margin="185,0,0,0"
+
+        <Image
+                    ToolTip="Связь с разработчиком"
+                    Margin="115,180,0,0"
                     Source="Resources/Logo.png" 
                 MouseDown="Image_MouseDown_1"
                 HorizontalAlignment="Left"
                 Width="80"
                 Height="90"
-                VerticalAlignment="Top" RenderTransformOrigin="0.8,0.578"/>
-            <TextBlock  
-                    TextWrapping="Wrap"
-                    Text="Связь с разработчиком --------&gt;"
-                    Margin="10,46,105,19"/>
-        </Grid>
-        <Image 
-                HorizontalAlignment="Left"
+                VerticalAlignment="Top" />
+
+        <Image
                 Height="100"
                 ToolTip="Алфёров Роман Генадьевич"
-                Margin="85,30,0,0"
+                Margin="0,431,122,0"
                 VerticalAlignment="Top"
-                Width="100"
-                Source="Resources/roma.png" Grid.Row="1"/>
-        <TextBlock
-                HorizontalAlignment="Left"  
+                Source="Resources/roma.png" HorizontalAlignment="Right" Width="100"/>
+        <TextBlock  
                 TextWrapping="Wrap"
                 Text="Дизайн: "              
                 VerticalAlignment="Top"
-                Margin="60,14,0,0"
-                Width="50"
-                RenderTransformOrigin="0.5,0.5" Grid.Row="1">
-            <TextBlock.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-15.549999999999999"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </TextBlock.RenderTransform>
-        </TextBlock>
+                Margin="0,410,142,0"
+                RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="50"/>
         <Image 
                     ToolTip="Плетнёв Денис Олегович"
                     Source="Resources/ogimage-1024x623.png"
-                RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="151" Margin="0,145,46,67" Grid.Row="1">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="6.701"/>
-                    <TranslateTransform X="-0.102" Y="-0.018"/>
-                </TransformGroup>
-            </Image.RenderTransform>
+                RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="240" Margin="0,83,42,0" Height="167" VerticalAlignment="Top">
+
         </Image>
-        <Grid Margin="116,151,357,29" Grid.Row="1">
-            <TextBlock  
+
+        <TextBlock  
                     TextWrapping="Wrap"
                     Text="Помощь с кодом программы:"
-                    RenderTransformOrigin="0.5,0.5" Margin="0,0,0,89">
-                <TextBlock.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="6.004"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </TextBlock.RenderTransform>
-            </TextBlock>
-            <Image
-                    Height="100"
-                    ToolTip="Салейчук Евгения Германовна"
-                    Margin="0,29,0,0"
+                   Margin="0,257,63,0" HorizontalAlignment="Right" Width="179" Height="37" VerticalAlignment="Top">
+
+        </TextBlock>
+        <Image
+                    Height="125"
+                    ToolTip="Плетнёва Евгения Германовна"
+                    Margin="0,280,102,0"
                     VerticalAlignment="Top"
                     Source="/Resources/adc9edfcaaa0e1163069fbc90189f1b1.jpg" 
                     RenderTransformOrigin="0.558,0.71"
                 Stretch="Fill"
-                HorizontalAlignment="Left"
-                Width="100">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="7.454"/>
-                        <TranslateTransform X="-0.812" Y="-1.026"/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
+                HorizontalAlignment="Right"
+                Width="140">
 
-        </Grid>
+        </Image>
+
+
         <TextBlock  
                     TextWrapping="Wrap"
                     Text="Консультирование по построению базы данных:" 
                     RenderTransformOrigin="0.5,0.5"
-                    Margin="0,110,7,0" 
-                    Height="40"
-                    VerticalAlignment="Top" Grid.Row="1" HorizontalAlignment="Right" Width="272">
-            <TextBlock.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-2.178"/>
-                    <TranslateTransform X="0.237" Y="0.029"/>
-                </TransformGroup>
-            </TextBlock.RenderTransform>
+                    Margin="0,50,42,0" 
+                    Height="60"
+                    VerticalAlignment="Top" HorizontalAlignment="Right" Width="240">
+
         </TextBlock>
     </Grid>
 </Page>
