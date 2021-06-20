@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sklad"
         mc:Ignorable="d"
-        Title="Авторизация оператора" Height="300" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Авторизация оператора" Height="300" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
     <Grid >
         <Button Margin="150,0,132,60" VerticalAlignment="Bottom" Height="21" Click="Button_Click">
             <TextBlock Text="Авторизоваться" Width="90" HorizontalAlignment="Center"></TextBlock>

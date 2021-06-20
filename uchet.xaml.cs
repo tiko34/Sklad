@@ -32,8 +32,8 @@ namespace Sklad
             string name = nametb.Text;
             string ed = edtb.Text;
             string kol = koltb.Text;
-        
-          
+
+           
 
 
          //   sl.Select($@"INSERT INTO товар (Наименование,СтоимЗаЕд,ЕдИзм,[кол-во],наличие) VALUES ('{name}', '{kol}','{ed}','{inn}')");
