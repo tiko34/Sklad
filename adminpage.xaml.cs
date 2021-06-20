@@ -10,34 +10,31 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Sklad
 {
     /// <summary>
-    /// Логика взаимодействия для auth.xaml
+    /// Логика взаимодействия для adminpage.xaml
     /// </summary>
-    public partial class auth : Window
+    public partial class adminpage : Page
     {
-        public auth()
+        public adminpage()
         {
             InitializeComponent();
-           
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Hide();
-            MainWindow main = new MainWindow();
-            main.Show();
+            dgtimedate.Visibility = Visibility;
+            dgdata.Visibility = Visibility;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Hide();
-            exit_window exit_win = new exit_window();
-            exit_win.Show();
-          
+            dgtimedate.Visibility = Visibility.Hidden;
+            dgdata.Visibility = Visibility.Hidden;
         }
     }
 }

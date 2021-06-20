@@ -77,8 +77,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="adminpage.xaml.cs">
+      <DependentUpon>adminpage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="auth.xaml.cs">
       <DependentUpon>auth.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="backauth.xaml.cs">
+      <DependentUpon>backauth.xaml</DependentUpon>
     </Compile>
     <Compile Include="infoclient.xaml.cs">
       <DependentUpon>infoclient.xaml</DependentUpon>
@@ -92,7 +98,15 @@
     <Compile Include="uchet.xaml.cs">
       <DependentUpon>uchet.xaml</DependentUpon>
     </Compile>
+    <Page Include="adminpage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="auth.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="backauth.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

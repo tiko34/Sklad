@@ -27,14 +27,16 @@ namespace Sklad
             InitializeComponent();
             openpage.MainFrame = main;
             
-        //    date.Text = Convert.ToString(DateTime.Now.ToString("Дата: dd.MM.yyyy"));
-        //   time.Text = Convert.ToString(DateTime.Now.ToString("Время: HH.mm"));
+        
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
+
+
             this.Hide();
-            auth maibackn = new auth();
+            backauth maibackn = new backauth();
             maibackn.Show();
 
         }
@@ -62,6 +64,12 @@ namespace Sklad
         {
             MainWindow.GetWindow(main).Title = "Оптовый склад->Номенклатура";
             main.Navigate(new uchet());
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            MainWindow.GetWindow(main).Title = "Оптовый склад->Администрирование";
+            main.Navigate(new adminpage());
         }
     }
 }

@@ -15,29 +15,27 @@ using System.Windows.Shapes;
 namespace Sklad
 {
     /// <summary>
-    /// Логика взаимодействия для auth.xaml
+    /// Логика взаимодействия для backauth.xaml
     /// </summary>
-    public partial class auth : Window
+    public partial class backauth : Window
     {
-        public auth()
+        public backauth()
         {
             InitializeComponent();
-           
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            MainWindow win = new MainWindow();
+            win.Show();
             Hide();
-            MainWindow main = new MainWindow();
-            main.Show();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Hide();
-            exit_window exit_win = new exit_window();
+            auth exit_win = new auth();
             exit_win.Show();
-          
+            Hide();
         }
     }
 }

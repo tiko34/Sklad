@@ -1,0 +1,26 @@
+﻿<Page x:Class="Sklad.adminpage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sklad"
+      mc:Ignorable="d" 
+      d:DesignHeight="569" d:DesignWidth="642"
+      Title="Администрирование">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="246*"/>
+            <RowDefinition Height="322*"/>
+        </Grid.RowDefinitions>
+        <Button Click="Button_Click_1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="191" Height="20">
+            <TextBlock Text="Регистрация нового оператора" TextAlignment="Center"></TextBlock>
+        </Button>
+        <Button Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="191" Margin="10,35,0,0" Height="20">
+            <TextBlock Text="Данные об операторе" TextAlignment="Center"></TextBlock>
+        </Button>
+        <DataGrid x:Name="dgdata" HorizontalAlignment="Left" Height="181" Margin="10,60,0,0" VerticalAlignment="Top" Width="622" Visibility="Hidden"/>
+        <DataGrid x:Name="dgtimedate" HorizontalAlignment="Left" Height="303" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="622" Visibility="Hidden"/>
+
+    </Grid>
+</Page>

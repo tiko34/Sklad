@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sklad"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="Оптовый склад" 
         Height="600" 
         Width="800" MinWidth="800" MinHeight="600">
@@ -17,7 +18,7 @@
         <Border
             Grid.Column="0"
             Background="Bisque">
-           
+
 
 
         </Border>
@@ -63,7 +64,15 @@
             <TextBlock 
                 Text="Клиенты"/>
         </Button>
-        
+        <Button 
+            Visibility="Hidden"
+           Click="Button_Click_5"
+            Margin="10,0,10,235"
+            Height="26"
+            VerticalAlignment="Bottom">
+            <TextBlock 
+                Text="Администрирование"/>
+        </Button>
     </Grid>
 
 </Window>
