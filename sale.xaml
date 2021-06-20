@@ -10,7 +10,7 @@
 
     <Grid>
         <ComboBox 
-          
+           ItemsSource="{Binding }"
             ToolTip="Выберите клиента" 
             Margin="270,13,10,0"
             VerticalAlignment="Top" IsReadOnly="True" SelectedIndex="0"/>
@@ -28,7 +28,7 @@
                 <DataGridTextColumn 
                     IsReadOnly="True"
                     Header="№"
-                                    Binding="{Binding Name}"
+                                    Binding="{Binding }"
                                     Width="100">
 
                 </DataGridTextColumn>
@@ -51,6 +51,13 @@
                     Header="ЕдИзм"
                                     Binding="{Binding Name}"
                                     Width="70">
+
+                </DataGridTextColumn>
+                <DataGridTextColumn 
+                    IsReadOnly="True"
+                    Header="Цена за Ед"
+                                    Binding="{Binding Name}"
+                                    Width="100">
 
                 </DataGridTextColumn>
                 <DataGridTemplateColumn Header="Наличие" Width="70">

@@ -28,7 +28,7 @@
             Height="25"
             VerticalAlignment="Bottom">
             <TextBlock 
-                Text="Номенклатура">
+                Text="Приход товара">
             </TextBlock>
         </Button>
         <Button 

@@ -9,11 +9,17 @@
       Title="Учёт">
 
     <Grid>
-        <Button  HorizontalAlignment="Left" Margin="25,10,0,0" VerticalAlignment="Top" Width="145">
-            <TextBlock Text="Приход">
-
-            </TextBlock>
+        <Button Margin="188,237,333,0" VerticalAlignment="Top" Click="Button_Click">
+            <TextBlock Text="Внести"></TextBlock>
         </Button>
+        <TextBox Height="23" Margin="188,82,44,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <TextBox Height="24" Margin="188,110,44,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <TextBox Height="24" Margin="188,139,44,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <TextBox Height="23" Margin="188,168,44,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        <Label Content="Наименование" Margin="61,87,472,0" VerticalAlignment="Top"/>
+        <Label Content="Количество" Margin="77,116,472,0" VerticalAlignment="Top"/>
+        <Label Content="ЕдИзм" Margin="102,145,472,0" VerticalAlignment="Top"/>
+        <Label Content="Стоимость ЗаЕд" Margin="54,173,472,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>

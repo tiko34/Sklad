@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace Sklad
 {
     /// <summary>
-    /// Логика взаимодействия для uchet.xaml
+    /// Логика взаимодействия для oformlenie.xaml
     /// </summary>
-    public partial class uchet : Page
+    public partial class oformlenie : Page
     {
-        public uchet()
+        public oformlenie()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
