@@ -21,15 +21,45 @@
                 TextWrapping="Wrap" />
         </Button>
         <DataGrid 
-            Margin="10,40,10,10" AutoGenerateColumns="False">
+            Margin="10,40,10,10" AutoGenerateColumns="False" x:Name="infoclientdb">
 
             <DataGrid.Columns >
-                <DataGridTemplateColumn Header="№" Width="70"></DataGridTemplateColumn>
-                <DataGridTemplateColumn Header="Название" Width="*"></DataGridTemplateColumn>
-                <DataGridTemplateColumn Header="Телефон" Width="140"></DataGridTemplateColumn>
-                <DataGridTemplateColumn Header="Адрес" Width="*"></DataGridTemplateColumn>
-                <DataGridTemplateColumn Header="ИНН" Width="140"></DataGridTemplateColumn>
-                <DataGridTemplateColumn Header="E-mail" Width="70"></DataGridTemplateColumn>
+                <DataGridTextColumn 
+                    IsReadOnly="True"
+                    Header="Название"
+                                    Binding="{Binding Название}"
+                                    Width="*">
+
+                </DataGridTextColumn>
+                <DataGridTextColumn 
+                    IsReadOnly="True"
+                    Header="Телефон"
+                                    Binding="{Binding телефон}"
+                                    Width="*">
+
+                </DataGridTextColumn>
+                <DataGridTextColumn 
+                    IsReadOnly="True"
+                    Header="Адрес"
+                                    Binding="{Binding Адрес}"
+                                    Width="*">
+
+                </DataGridTextColumn>
+                <DataGridTextColumn 
+                    IsReadOnly="True"
+                    Header="ИНН"
+                                    Binding="{Binding ИНН}"
+                                    Width="*">
+
+                </DataGridTextColumn>
+                <DataGridTextColumn 
+                    IsReadOnly="True"
+                    Header="Электронная почта"
+                                    Binding="{Binding e-mail}"
+                                    Width="*">
+
+                </DataGridTextColumn>
+           
             </DataGrid.Columns>
         </DataGrid>
 

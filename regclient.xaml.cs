@@ -65,6 +65,7 @@ namespace Sklad
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
             if (namebox.Text.Length == 0 || addressbox.Text.Length == 0 || phonebox.Text.Length==0)
             {
                 MessageBox.Show("Не все поля заполнены!", "Внимание", MessageBoxButton.OK);
@@ -73,7 +74,34 @@ namespace Sklad
             {
                 if (innbox.Text.Length < 12)
                 {
- MessageBox.Show("Неполный номер ИНН", "Внимание", MessageBoxButton.OK);
+                    MessageBox.Show("Неполный номер ИНН", "Внимание", MessageBoxButton.OK);
+                }
+                else 
+                {
+
+                    try
+                    {
+                        string name = Convert.ToString(namebox.Text);
+                        string phone = Convert.ToString(phonebox.Text);
+                        string adres = Convert.ToString(addressbox.Text);
+                        string inn = Convert.ToString(innbox.Text);
+                        string mail = Convert.ToString(namebox.Text);
+                        DT sl = new DT();
+                        sl.Select($@"INSERT INTO Клиенты (Название,телефон,Адрес,ИНН,[e-mail]) VALUES ('{name}', '{phone}','{adres}','{inn}','{mail}')");
+                        MainWindow.GetWindow(openpage.MainFrame).Title = "Оптовый склад->Клиенты";
+                        openpage.MainFrame.Navigate(new infoclient());
+
+                    }
+                    catch (Exception)
+                    {
+
+                        MessageBox.Show("Ошибка добавления данных", "обратитесь к разработчику", MessageBoxButton.OK);
+                    }
+                  
+
+
+
+
                 }
                    
             }

@@ -16,14 +16,14 @@
 
         </Viewbox>
 
-        <TextBox x:Name="innbox" Margin="160,140,362,0" Height="20" VerticalAlignment="Top"   TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="innbox" Margin="160,140,163,0" Height="20" VerticalAlignment="Top"   TextChanged="TextBox_TextChanged"/>
 
-        <TextBox x:Name="addressbox" Margin="160,100,362,0" Height="20" VerticalAlignment="Top"/>
-        <TextBox x:Name="namebox" Margin="160,20,362,0" Height="20" VerticalAlignment="Top"/>
-        <TextBox x:Name="phonebox" Margin="160,60,362,0" Height="20" VerticalAlignment="Top" TextChanged="phonebox_TextChanged" IsEnabled="True" IsReadOnly="False"/>
+        <TextBox x:Name="addressbox" Margin="160,100,163,0" Height="20" VerticalAlignment="Top"/>
+        <TextBox x:Name="namebox" Margin="160,20,163,0" Height="20" VerticalAlignment="Top"/>
+        <TextBox x:Name="phonebox" Margin="160,60,163,0" Height="20" VerticalAlignment="Top" TextChanged="phonebox_TextChanged" IsEnabled="True" IsReadOnly="False"/>
 
 
-        <TextBox  Margin="160,180,362,0" Height="20" VerticalAlignment="Top"/>
+        <TextBox  Margin="160,180,163,0" Height="20" VerticalAlignment="Top"/>
 
         <Viewbox Height="24" HorizontalAlignment="Left" Width="105" VerticalAlignment="Top" Margin="50,63,0,0" Stretch="UniformToFill">
             <Label  >
@@ -52,7 +52,7 @@
                 <TextBlock Text="Адрес электронной почты"  TextAlignment="Center"></TextBlock>
             </Label>
         </Viewbox >
-        <Button Margin="160,220,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120" Click="Button_Click">
+        <Button Margin="160,220,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="161" Click="Button_Click">
             <Viewbox Height="20">
                 <TextBlock Text="Регистрация"></TextBlock>
             </Viewbox>

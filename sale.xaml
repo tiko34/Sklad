@@ -10,10 +10,22 @@
 
     <Grid>
         <ComboBox 
-           ItemsSource="{Binding }"
-            ToolTip="Выберите клиента" 
+          x:Name="cmbclient"
+        
+                 
+
+        ToolTip="Выберите клиента" 
             Margin="270,13,10,0"
-            VerticalAlignment="Top" IsReadOnly="True" SelectedIndex="0"/>
+            VerticalAlignment="Top" IsReadOnly="True" >
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Rectangle Fill="{Binding Название}" Width="16" Height="16" Margin="0,2,5,2" />
+                        <TextBlock Text="{Binding Название}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
         <Button 
          
             HorizontalAlignment="Right" Margin="0,0,10,10" Width="130" Height="20" VerticalAlignment="Bottom">
@@ -25,38 +37,41 @@
                     AutoGenerateColumns="False"
             Margin="10,40,10,35">
             <DataGrid.Columns >
+                
                 <DataGridTextColumn 
                     IsReadOnly="True"
                     Header="№"
-                                    Binding="{Binding }"
+                    
+                                    Binding="{Binding id}"
                                     Width="100">
 
+                    
                 </DataGridTextColumn>
                 <DataGridTextColumn 
                     IsReadOnly="True"
                     Header="Название"
-                                    Binding="{Binding Name}"
+                                    Binding="{Binding Наименование}"
                                     Width="*">
 
                 </DataGridTextColumn>
                 <DataGridTextColumn 
                     IsReadOnly="True"
                     Header="Кол-во"
-                                    Binding="{Binding Name}"
+                                    Binding="{Binding кол-во}"
                                     Width="100">
 
                 </DataGridTextColumn>
                 <DataGridTextColumn 
                     IsReadOnly="True"
                     Header="ЕдИзм"
-                                    Binding="{Binding Name}"
+                                    Binding="{Binding ЕдИзм}"
                                     Width="70">
 
                 </DataGridTextColumn>
                 <DataGridTextColumn 
                     IsReadOnly="True"
                     Header="Цена за Ед"
-                                    Binding="{Binding Name}"
+                                    Binding="{Binding СтоимЗаЕд}"
                                     Width="100">
 
                 </DataGridTextColumn>

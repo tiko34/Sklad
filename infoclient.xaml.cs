@@ -23,6 +23,7 @@ namespace Sklad
         public infoclient()
         {
             InitializeComponent();
+            infoclientdb.ItemsSource = skladEntities.GetContext().Клиенты.ToList();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
