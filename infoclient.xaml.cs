@@ -31,5 +31,10 @@ namespace Sklad
             MainWindow.GetWindow(openpage.MainFrame).Title = "Оптовый склад->Клиенты->Регистрация клиента";
             openpage.MainFrame.Navigate(new regclient());
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -22,7 +22,7 @@ namespace Sklad
     
         public int id { get; set; }
         public int idтовар { get; set; }
-        public int idзаказ { get; set; }
+        public Nullable<int> idзаказ { get; set; }
         public int кол_во { get; set; }
         public string ЕдИзм { get; set; }
         public decimal СтоимЗаЕд { get; set; }

@@ -8,7 +8,7 @@
         WindowStartupLocation="CenterScreen"
         Title="Оптовый склад" 
         Height="600" 
-        Width="800" MinWidth="800" MinHeight="600">
+        Width="800" MinWidth="800" MinHeight="600" Closed="Window_Closed">
     <Grid>
 
         <Grid.ColumnDefinitions>
@@ -68,6 +68,7 @@
             Visibility="Hidden"
            Click="Button_Click_5"
             Margin="10,0,10,235"
+            x:Name="admn"
             Height="26"
             VerticalAlignment="Bottom">
             <TextBlock 

@@ -26,7 +26,8 @@ namespace Sklad
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            
+            Application.Current.Shutdown(0);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
