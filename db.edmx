@@ -70,8 +70,7 @@
           <Key>
             <PropertyRef Name="idтовар" />
           </Key>
-          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="idтовар" Type="int" Nullable="false" />
+          <Property Name="idтовар" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="idзаказ" Type="int" />
           <Property Name="кол-во" Type="int" Nullable="false" />
           <Property Name="ЕдИзм" Type="nvarchar(max)" Nullable="false" />
@@ -290,7 +289,6 @@
           <Key>
             <PropertyRef Name="idтовар" />
           </Key>
-          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="idтовар" Type="Int32" Nullable="false" />
           <Property Name="idзаказ" Type="Int32" Nullable="true" />
           <Property Name="кол_во" Type="Int32" Nullable="false" />
@@ -523,7 +521,6 @@
           <EntitySetMapping Name="товар">
             <EntityTypeMapping TypeName="skladModel.товар">
               <MappingFragment StoreEntitySet="товар">
-                <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="idтовар" ColumnName="idтовар" />
                 <ScalarProperty Name="idзаказ" ColumnName="idзаказ" />
                 <ScalarProperty Name="кол_во" ColumnName="кол-во" />
