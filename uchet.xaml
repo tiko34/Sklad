@@ -1,16 +1,16 @@
-﻿<Page x:Class="Sklad.edda1"
+﻿<Page x:Class="Sklad.uchet"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Sklad"
       mc:Ignorable="d" 
-      d:DesignHeight="569" d:DesignWidth="642"
-      Title="edda1">
+   d:DesignHeight="569" d:DesignWidth="642"
+      Title="Учёт">
 
     <Grid>
         <Button Margin="119,141,378,0" VerticalAlignment="Top" Click="Button_Click">
-            <TextBlock Text="Внести"/>
+            <TextBlock Text="Внести"></TextBlock>
         </Button>
         <TextBox Height="23" Margin="119,13,113,0" TextWrapping="Wrap"  VerticalAlignment="Top" x:Name="nametb"/>
         <TextBox Height="24" Margin="119,43,113,0" TextWrapping="Wrap"  VerticalAlignment="Top" x:Name="koltb"/>
@@ -20,5 +20,6 @@
         <Label Content="Количество" Margin="10,49,539,0" VerticalAlignment="Top"/>
         <Label Content="ЕдИзм" Margin="10,82,564,0" VerticalAlignment="Top"/>
         <Label Content="Стоимость 1/Ед" Margin="3,110,523,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Page>

@@ -18,6 +18,8 @@ namespace Sklad
     public partial class skladEntities : DbContext
     {
 
+
+
         private static skladEntities _context;
         public skladEntities()
             : base("name=skladEntities")
@@ -31,11 +33,18 @@ namespace Sklad
 
         }
 
-
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
+
+
+
+
+
+
+
+
     
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<ВидОплаты> ВидОплаты { get; set; }

@@ -46,7 +46,11 @@ namespace Sklad
             
         }
 
-       
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            MainWindow.GetWindow(main).Title = "Оптовый склад->Номенклатура";
+            main.Navigate(new uchet());
+        }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
