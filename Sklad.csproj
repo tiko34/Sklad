@@ -114,6 +114,9 @@
       <DependentUpon>db.edmx</DependentUpon>
     </Compile>
     <Compile Include="DT.cs" />
+    <Compile Include="edda1.xaml.cs">
+      <DependentUpon>edda1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="infoclient.xaml.cs">
       <DependentUpon>infoclient.xaml</DependentUpon>
     </Compile>
@@ -168,6 +171,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="backauth.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="edda1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

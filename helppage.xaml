@@ -43,12 +43,6 @@
                 Text="Курсовой проект студента группы 531 Тихонкова Михаила Дмитриевича"          
                 VerticalAlignment="Top"
                 Margin="10,112,0,0" Width="215"/>
-        <TextBlock  
-                TextWrapping="Wrap"
-                Text="Помощь проекту оказали: "
-                Margin="0,12,10,0" FontSize="20" TextAlignment="Center" HorizontalAlignment="Right" Width="311" Height="53" VerticalAlignment="Top">
-
-        </TextBlock>
 
         <Image
                     ToolTip="Связь с разработчиком"
@@ -59,41 +53,5 @@
                 Width="80"
                 Height="90"
                 VerticalAlignment="Top" />
-        <Image 
-                    ToolTip="Плетнёв Денис Олегович"
-                    Source="Resources/ogimage-1024x623.png"
-                RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Right" Width="240" Margin="0,83,42,0" Height="167" VerticalAlignment="Top">
-
-        </Image>
-
-        <TextBlock  
-                    TextWrapping="Wrap"
-                    Text="Помощь с кодом программы:"
-                   Margin="0,257,63,0" HorizontalAlignment="Right" Width="179" Height="37" VerticalAlignment="Top">
-
-        </TextBlock>
-        <Image
-                    Height="125"
-                    ToolTip="Плетнёва Евгения Германовна"
-                    Margin="0,280,102,0"
-                    VerticalAlignment="Top"
-                    Source="/Resources/adc9edfcaaa0e1163069fbc90189f1b1.jpg" 
-                    RenderTransformOrigin="0.558,0.71"
-                Stretch="Fill"
-                HorizontalAlignment="Right"
-                Width="140">
-
-        </Image>
-
-
-        <TextBlock  
-                    TextWrapping="Wrap"
-                    Text="Консультирование по построению базы данных:" 
-                    RenderTransformOrigin="0.5,0.5"
-                    Margin="0,50,42,0" 
-                    Height="60"
-                    VerticalAlignment="Top" HorizontalAlignment="Right" Width="240">
-
-        </TextBlock>
     </Grid>
 </Page>
