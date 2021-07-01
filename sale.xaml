@@ -11,73 +11,52 @@
     </Page.Resources>
 
     <Grid>
-        <ComboBox 
-          x:Name="cmbclient"
-        
-                 
-
-        ToolTip="Выберите клиента" 
-            Margin="270,13,10,0"
-            VerticalAlignment="Top" IsReadOnly="True" >
-            <ComboBox.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <Rectangle Fill="{Binding Название}" Width="16" Height="16" Margin="0,2,5,2" />
-                        <TextBlock Text="{Binding Название}" />
-                    </StackPanel>
-                </DataTemplate>
-            </ComboBox.ItemTemplate>
-        </ComboBox>
         <Button 
          
-            HorizontalAlignment="Right" Margin="0,0,10,10" Width="130" Height="20" VerticalAlignment="Bottom">
+            HorizontalAlignment="Right" Margin="0,0,10,10" Width="130" Height="20" VerticalAlignment="Bottom" Click="Button_Click_1">
             <TextBlock Text="Оформление" ></TextBlock>
         </Button>
-        <DataGrid 
-          
-            x:Name="tabletovar"    
+        <DataGrid
+            x:Name="tabletovar" 
+                  Margin="0,40,0,48"
             AutoGenerateColumns="False"
-            Margin="10,40,10,35">
-            <DataGrid.Columns >
-                
-               
-                <DataGridTextColumn 
+          ColumnWidth="*"
+            >
+
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                  
+                    Header="Наименование"
+                       Binding="{Binding   Наименование}"
                     IsReadOnly="True"
-                    Header="Название"
-                                    Binding="{Binding Наименование}"
-                                    Width="*">
+                    >
 
                 </DataGridTextColumn>
-        
-                        <DataGridTextColumn            
+                <DataGridTextColumn
+                   Header="Кол-во"
+                       Binding="{Binding   кол_во}"
                     IsReadOnly="True"
-                    Header="Кол-во"
-                                    Width="100"
-                               Binding="{Binding кол-во}">
-                   
+                    >
 
                 </DataGridTextColumn>
-
-               
-                <DataGridTextColumn 
+                <DataGridTextColumn
+                   Header="ЕдИзм"
+                       Binding="{Binding  ЕдИзм}"
                     IsReadOnly="True"
-                    Header="ЕдИзм"
-                                    Binding="{Binding ЕдИзм}"
-                                    Width="70">
+                    >
 
                 </DataGridTextColumn>
-                <DataGridTextColumn 
-                    IsReadOnly="True"
-                    Header="Цена за Ед"
-                                    Binding="{Binding СтоимЗаЕд}"
-                                    Width="100">
+                <DataGridTemplateColumn IsReadOnly="True" Header="Наличие">
+                    <DataGridTemplateColumn.CellTemplate >
+                        <DataTemplate >
+                            <CheckBox 
+                                HorizontalAlignment="Center" 
+                  Margin="10 0 10 0" 
+                  Width="20" 
+                  MinWidth="20"
+                                 
+                  IsChecked="{Binding наличие}">
 
-                </DataGridTextColumn>
-               
-                <DataGridTemplateColumn Header="Выбор" Width="70">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <CheckBox x:Name="chktovar"  >
 
                             </CheckBox>
                         </DataTemplate>
@@ -86,6 +65,16 @@
             </DataGrid.Columns>
 
 
+
+
+
         </DataGrid>
+        <Button x:Name="dekbtn" Margin="10,0,0,10" VerticalAlignment="Bottom" Click="dekbtn_Click" HorizontalAlignment="Left" Width="130" Height="20">
+            <TextBlock Text="Удалить"></TextBlock>
+        </Button>
+        <Button Margin="162,0,0,10" VerticalAlignment="Bottom" Height="20" HorizontalAlignment="Left" Width="130" Click="Button_Click">
+            <TextBlock Text="Добавить"></TextBlock>
+        </Button>
+
     </Grid>
 </Page>

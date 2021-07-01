@@ -20,7 +20,6 @@ namespace Sklad
             this.Товар_Заказ = new HashSet<Товар_Заказ>();
         }
     
-        public int id { get; set; }
         public int idтовар { get; set; }
         public Nullable<int> idзаказ { get; set; }
         public int кол_во { get; set; }

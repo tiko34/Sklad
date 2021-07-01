@@ -23,15 +23,6 @@
 
         </Border>
         <Button 
-            Click="Button_Click_4"
-            Margin="10,0,10,144"
-            Height="25"
-            VerticalAlignment="Bottom">
-            <TextBlock 
-                Text="Приход товара">
-            </TextBlock>
-        </Button>
-        <Button 
             Margin="10,0,10,99"
             Click="Button_Click_2"
             Height="25"
@@ -58,7 +49,7 @@
         <Frame  x:Name="main" Grid.Column="2" NavigationUIVisibility="Hidden"></Frame>
         <Button 
             Click="Button_Click_3"
-            Margin="10,0,10,189"
+            Margin="10,0,10,153"
             Height="25"
             VerticalAlignment="Bottom">
             <TextBlock 

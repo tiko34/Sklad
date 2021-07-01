@@ -21,7 +21,7 @@
                 TextWrapping="Wrap" />
         </Button>
         <DataGrid 
-            Margin="10,40,10,10" AutoGenerateColumns="False" x:Name="infoclientdb">
+            Margin="10,40,10,92" AutoGenerateColumns="False" x:Name="infoclientdb">
 
             <DataGrid.Columns >
                 <DataGridTextColumn 
@@ -58,7 +58,7 @@
                                     Binding="{Binding e-mail}"
                    
                                     Width="*">
-                
+
                 </DataGridTextColumn>
                 <DataGridTemplateColumn x:Name="delclient" Header="Удаление" Width="70" Visibility="Hidden">
                     <DataGridTemplateColumn.CellTemplate>
@@ -66,15 +66,20 @@
                             <Button Click="Button_Click_1">
                                 <TextBlock
                                     Text="Удалить">
-                                    
+
                                 </TextBlock>
                             </Button>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
-           
+
             </DataGrid.Columns>
         </DataGrid>
+        <Button Margin="0,0,10,48" Click="Button_Click_2" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75">
+            <TextBlock Text="Удалить">
+
+            </TextBlock>
+        </Button>
 
     </Grid>
 </Page>
