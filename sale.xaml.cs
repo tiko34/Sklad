@@ -39,5 +39,11 @@ namespace Sklad
                 }
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.GetWindow(openpage.MainFrame).Title = "Оптовый склад->Торговля->Добавление товара";
+            openpage.MainFrame.Navigate(new edda1());
+        }
     }
 }

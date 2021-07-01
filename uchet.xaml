@@ -9,17 +9,7 @@
       Title="Учёт">
 
     <Grid>
-        <Button Margin="119,141,378,0" VerticalAlignment="Top" Click="Button_Click">
-            <TextBlock Text="Внести"></TextBlock>
-        </Button>
-        <TextBox Height="23" Margin="119,13,113,0" TextWrapping="Wrap"  VerticalAlignment="Top" x:Name="nametb"/>
-        <TextBox Height="24" Margin="119,43,113,0" TextWrapping="Wrap"  VerticalAlignment="Top" x:Name="koltb"/>
-        <TextBox Height="24" Margin="119,76,113,0" TextWrapping="Wrap"  VerticalAlignment="Top" x:Name="edtb"/>
-        <TextBox Height="23" Margin="119,105,113,0" TextWrapping="Wrap"  VerticalAlignment="Top" x:Name="stoimtb"/>
-        <Label Content="Наименование" Margin="6,10,528,0" VerticalAlignment="Top"/>
-        <Label Content="Количество" Margin="10,49,539,0" VerticalAlignment="Top"/>
         <Label Content="ЕдИзм" Margin="10,82,564,0" VerticalAlignment="Top"/>
-        <Label Content="Стоимость 1/Ед" Margin="3,110,523,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>
