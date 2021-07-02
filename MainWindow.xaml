@@ -23,7 +23,7 @@
 
         </Border>
         <Button 
-            Margin="10,0,10,99"
+            Margin="10,0,10,70"
             Click="Button_Click_2"
             Height="25"
             VerticalAlignment="Bottom">
@@ -40,7 +40,7 @@
         </Button>
         <Button       
             Click="Button_Click_1"
-            Margin="10,0,10,54" Height="25" VerticalAlignment="Bottom">
+            Margin="10,0,10,40" Height="25" VerticalAlignment="Bottom">
             <TextBlock 
                 Text="О программе">
             </TextBlock>
@@ -49,7 +49,7 @@
         <Frame  x:Name="main" Grid.Column="2" NavigationUIVisibility="Hidden"></Frame>
         <Button 
             Click="Button_Click_3"
-            Margin="10,0,10,189"
+            Margin="10,0,10,100"
             Height="25"
             VerticalAlignment="Bottom">
             <TextBlock 
@@ -65,6 +65,51 @@
             <TextBlock 
                 Text="Администрирование"/>
         </Button>
+        <DataGrid
+            x:Name="tabletovar" 
+            Margin="10,10,10,346"
+            AutoGenerateColumns="False"
+            ColumnWidth="*" Grid.Column="1"
+            IsReadOnly="True"
+            >
+
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                  
+                    Header="Наименование"
+                    Binding="{Binding Наименование}"
+                    IsReadOnly="True"
+                    />
+                <DataGridTextColumn
+                    Header="Кол-во"
+                    Binding="{Binding кол_во}"
+                    IsReadOnly="True"
+                    />
+                <DataGridTextColumn
+                    Header="ЕдИзм"
+                    Binding="{Binding ЕдИзм}"
+                    IsReadOnly="True"
+                    />
+                <DataGridTemplateColumn IsReadOnly="True" Header="Наличие">
+                    <DataGridTemplateColumn.CellTemplate >
+                        <DataTemplate >
+                            <CheckBox 
+                                HorizontalAlignment="Center" 
+                                Margin="10 0 10 0" 
+                                Width="20" 
+                                MinWidth="20"
+                                 
+                                IsChecked="{Binding наличие}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+
+
+
+
+
+        </DataGrid>
     </Grid>
 
 </Window>

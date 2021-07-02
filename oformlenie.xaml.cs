@@ -16,25 +16,12 @@ namespace Sklad
         public oformlenie()
         {
             InitializeComponent();
-         
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
 
-
+            //Добавляет запись в табл заказ, обязательно включает в себя табл товар_заказ
            try
            {
                 DT sql = new DT();
@@ -51,7 +38,7 @@ namespace Sklad
          }
            catch (Exception)
           {
-              MessageBox.Show("Ошибка", "Обратитесь к разработчику", MessageBoxButton.OK);
+              MessageBox.Show("Ошибка добавления записи", "Ошибка", MessageBoxButton.OK);
                
            }
             
