@@ -19,7 +19,7 @@ namespace Sklad
 
         }
 
-        private void dekbtn_Click(object sender,System.Windows.RoutedEventArgs e)
+        private void dekbtn_Click(object sender,RoutedEventArgs e)
         {
             if(MessageBox.Show($"Вы точно хотите удалить следуюшие записи?","Внимание!",MessageBoxButton.YesNo,MessageBoxImage.Question) == MessageBoxResult.Yes) 
             {

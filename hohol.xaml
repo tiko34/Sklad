@@ -1,0 +1,59 @@
+﻿<Page x:Class="Sklad.hohol"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sklad"
+      mc:Ignorable="d" 
+      d:DesignHeight="569" d:DesignWidth="642"
+      Title="hohol">
+
+    <Grid>
+        <DataGrid
+            x:Name="tabletovar" 
+            Margin="10,10,168,298"
+            AutoGenerateColumns="False"
+            ColumnWidth="*"
+            IsReadOnly="True"
+            >
+
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                  
+                    Header="Наименование"
+                    Binding="{Binding Наименование}"
+                    IsReadOnly="True"
+                    />
+                <DataGridTextColumn
+                    Header="Кол-во"
+                    Binding="{Binding кол_во}"
+                    IsReadOnly="True"
+                    />
+                <DataGridTextColumn
+                    Header="ЕдИзм"
+                    Binding="{Binding ЕдИзм}"
+                    IsReadOnly="True"
+                    />
+                <DataGridTemplateColumn IsReadOnly="True" Header="Наличие">
+                    <DataGridTemplateColumn.CellTemplate >
+                        <DataTemplate >
+                            <CheckBox 
+                                HorizontalAlignment="Center" 
+                                Margin="10 0 10 0" 
+                                Width="20" 
+                                MinWidth="20"
+                                 
+                                IsChecked="{Binding наличие}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+
+
+
+
+
+        </DataGrid>
+
+    </Grid>
+</Page>

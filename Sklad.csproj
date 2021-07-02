@@ -117,6 +117,9 @@
     <Compile Include="edda1.xaml.cs">
       <DependentUpon>edda1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="hohol.xaml.cs">
+      <DependentUpon>hohol.xaml</DependentUpon>
+    </Compile>
     <Compile Include="infoclient.xaml.cs">
       <DependentUpon>infoclient.xaml</DependentUpon>
     </Compile>
@@ -137,9 +140,6 @@
     </Compile>
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>db.tt</DependentUpon>
-    </Compile>
-    <Compile Include="uchet.xaml.cs">
-      <DependentUpon>uchet.xaml</DependentUpon>
     </Compile>
     <Compile Include="ВидОплаты.cs">
       <DependentUpon>db.tt</DependentUpon>
@@ -186,6 +186,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="hohol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="infoclient.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -217,10 +221,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="sale.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="uchet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

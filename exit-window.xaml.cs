@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 
 namespace Sklad
 {
@@ -14,8 +15,8 @@ namespace Sklad
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
-            Application.Current.Shutdown();
+            Environment.Exit(0);
+         
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
