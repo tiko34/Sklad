@@ -9,13 +9,26 @@
       Title="оформление">
 
     <Grid>
-        <Label Content="Введите номер клиента" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Width="144"/>
-        <TextBox x:Name="clbo" HorizontalAlignment="Left" Height="23" Margin="171,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="214"/>
-        <TextBox x:Name="vid" Height="23" Margin="171,0,257,493" TextWrapping="Wrap"  VerticalAlignment="Bottom"/>
-        <TextBox x:Name="sim" HorizontalAlignment="Left" Height="23" Margin="171,110,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="214"/>
+        <Label Content="Введите номер клиента" HorizontalAlignment="Left" Margin="22,18,0,0" VerticalAlignment="Top" Width="144"/>
+        <TextBox x:Name="clbo" HorizontalAlignment="Left" Height="23" Margin="171,18,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="193"/>
+        <TextBox x:Name="sim" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="171,75,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="193"/>
         <Label Content="Вид оплаты
-               " HorizontalAlignment="Left" Margin="81,53,0,0" VerticalAlignment="Top" Width="73"/>
-        <Label Content="Сумма" HorizontalAlignment="Left" Margin="108,110,0,0" VerticalAlignment="Top"/>
-        <Button Content="оформить" HorizontalAlignment="Left" Margin="171,256,0,0" VerticalAlignment="Top" Width="107" Click="Button_Click"/>
+               " HorizontalAlignment="Left" Margin="93,48,0,0" VerticalAlignment="Top" Width="73"/>
+        <Label Content="Сумма оплаты" HorizontalAlignment="Left" Margin="77,75,0,0" VerticalAlignment="Top"/>
+        <Button Content="оформить" HorizontalAlignment="Left" Margin="77,216,0,0" VerticalAlignment="Top" Width="107" Click="Button_Click"/>
+        <ComboBox HorizontalAlignment="Left" Margin="171,48,0,0" VerticalAlignment="Top" Width="193" x:Name="cvb">
+            <ComboBoxItem Content="Безналичный"/>
+            <ComboBoxItem Content="Наличный"/>
+        </ComboBox>
+        <TextBox x:Name="tovar" HorizontalAlignment="Left" Height="23" Margin="483,18,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="148"/>
+        <TextBox x:Name="lok" HorizontalAlignment="Left" Height="23" Margin="483,78,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="149"/>
+        <TextBox x:Name="stoim" HorizontalAlignment="Left" Height="23" Margin="483,106,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="149"/>
+        <Label Content="Ед.измерения" HorizontalAlignment="Left" Margin="392,44,0,0" VerticalAlignment="Top"/>
+        <Label Content="Номер товара" HorizontalAlignment="Left" Margin="392,15,0,0" VerticalAlignment="Top"/>
+        <Label Content="Кол-во" HorizontalAlignment="Left" Margin="430,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="Стоимость 1/Ед" HorizontalAlignment="Left" Margin="383,103,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="prim" HorizontalAlignment="Left" Height="23" Margin="483,134,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="148"/>
+        <Label Content="Примечание" HorizontalAlignment="Left" Margin="383,134,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="edi" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="148" Margin="483,48,0,0"/>
     </Grid>
 </Page>

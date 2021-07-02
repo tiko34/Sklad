@@ -54,7 +54,7 @@
         <Button 
             Visibility="Hidden"
            Click="Button_Click_5"
-            Margin="10,0,10,235"
+            Margin="10,0,10,160"
             x:Name="admn"
             Height="26"
             VerticalAlignment="Bottom">

@@ -16,36 +16,74 @@ namespace Sklad
         public oformlenie()
         {
             InitializeComponent();
+
         }
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
 
-            //Добавляет запись в табл заказ, обязательно включает в себя табл товар_заказ
-           try
-           {
-                DT sql = new DT();
-                int cl = Convert.ToInt32(clbo.Text);
-                int opl = Convert.ToInt32(vid.Text);
-                float sm = (float)Convert.ToDouble(sim.Text);
-            string st = Convert.ToString(DateTime.Now);
+          //  //Добавляет запись в табл заказ, обязательно включает в себя табл товар_заказ
+          // try
+          //{
+              DT sql = new DT();
+                int opl = 0;
+                if(cvb.SelectedIndex == 0)
+                {
+                    opl = 2;
 
-                sql.Select($@"INSERT INTO заказ (idклиент, ВидОплаты, датасоставления,общаясумма) VALUES('{cl}','{opl}', '{st}' ,'{sm}')");
-                MessageBox.Show("Успех", "Данные добавлены", MessageBoxButton.OK);
-                openpage.MainFrame.Navigate(new sale());
-                Window.GetWindow(openpage.MainFrame).Title = "Оптовый склад->Торговля";
-              
-         }
-           catch (Exception)
-          {
-              MessageBox.Show("Ошибка добавления записи", "Ошибка", MessageBoxButton.OK);
-               
-           }
-            
+                }
+                else
+                {
+                    opl = 1;
+                }  
+                int cl = Convert.ToInt32(clbo.Text);
+             //   float sm = 5;
+                string st = Convert.ToString(DateTime.Now);// дата сейчас
+
+            /// добавление заказ
+           string yh = Convert.ToString(prim.Text);//примечание
+          
+            int idtovr = Convert.ToInt32(tovar.Text);
+            int kolvo = Convert.ToInt32(lok.Text);//колво
+            string edizm = Convert.ToString(edi.Text);//
+            int thaed = Convert.ToInt32(stoim.Text);//за ед товара
+            int smm = kolvo * thaed;
+            sql.Select($@"INSERT INTO заказ (idклиент, ВидОплаты, датасоставления,общаясумма) VALUES('{cl}','{opl}', '{st}' ,'{smm}')");
+            //DataTable idx = sql.Select("SELECT MAX(idзаказ) FROM заказ");//id заказ
+            // DataTable dt_user = sl.Select("SELECT Log,pass,приоритет FROM [Операторы]");
+
+        
+
+            // добавление товар_заказ
+            sql.Select($@"INSERT INTO Товар_Заказ (Наименование, idЗаказ, idТовар,колво,едизм,стоимзаед) VALUES('{yh}','{idx}', '{idtovr}' ,'{kolvo}','{edizm}','{thaed}')");
+
+
+
+
+
+
+
+
+
+
+
+
+            //      //////успех
+            //      MessageBox.Show("Успех","Данные добавлены",MessageBoxButton.OK);
+            //      openpage.MainFrame.Navigate(new sale());
+            //      Window.GetWindow(openpage.MainFrame).Title = "Оптовый склад->Торговля";
+            //  }
+            //catch (Exception)
+            //{
+            //    MessageBox.Show("Ошибка добавления записи", "Ошибка", MessageBoxButton.OK);
+
+            //}
+
 
 
 
 
         }
+
     }
 }
