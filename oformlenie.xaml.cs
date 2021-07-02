@@ -1,4 +1,9 @@
-﻿using System.Windows.Controls;
+﻿using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace Sklad
 {
@@ -10,6 +15,26 @@ namespace Sklad
         public oformlenie()
         {
             InitializeComponent();
+            // off.ItemsSource = skladEntities.GetContext().Клиенты.ToList();
+            DT sql = new DT();
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
         }
+
+      
     }
 }

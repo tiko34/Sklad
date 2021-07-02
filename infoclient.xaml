@@ -26,6 +26,13 @@
             <DataGrid.Columns >
                 <DataGridTextColumn 
                     IsReadOnly="True"
+                    Header="№"
+                                    Binding="{Binding Номер}"
+                                    Width="*">
+
+                </DataGridTextColumn>
+                <DataGridTextColumn 
+                    IsReadOnly="True"
                     Header="Название"
                                     Binding="{Binding Название}"
                                     Width="*">

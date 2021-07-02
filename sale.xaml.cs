@@ -16,8 +16,7 @@ namespace Sklad
             InitializeComponent();
             DT sl = new DT();
             tabletovar.ItemsSource = skladEntities.GetContext().товар.ToList();
-            cmbclient.ItemsSource = skladEntities.GetContext().Клиенты.ToList();
-            string cmb = (string)cmbclient.SelectedItem;
+           
         }
 
         private void dekbtn_Click(object sender, System.Windows.RoutedEventArgs e)
@@ -44,6 +43,12 @@ namespace Sklad
         {
             MainWindow.GetWindow(openpage.MainFrame).Title = "Оптовый склад->Торговля->Добавление товара";
             openpage.MainFrame.Navigate(new edda1());
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainWindow.GetWindow(openpage.MainFrame).Title = "Оптовый склад->Торговля->оформление";
+            openpage.MainFrame.Navigate(new oformlenie());
         }
     }
 }
