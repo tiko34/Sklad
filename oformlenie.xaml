@@ -10,6 +10,12 @@
 
     <Grid>
         <Label Content="Введите номер клиента" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Width="144"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="171,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="214"/>
+        <TextBox x:Name="clbo" HorizontalAlignment="Left" Height="23" Margin="171,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="214"/>
+        <TextBox x:Name="vid" Height="23" Margin="171,0,257,493" TextWrapping="Wrap"  VerticalAlignment="Bottom"/>
+        <TextBox x:Name="sim" HorizontalAlignment="Left" Height="23" Margin="171,110,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="214"/>
+        <Label Content="Вид оплаты
+               " HorizontalAlignment="Left" Margin="81,53,0,0" VerticalAlignment="Top" Width="73"/>
+        <Label Content="Сумма" HorizontalAlignment="Left" Margin="108,110,0,0" VerticalAlignment="Top"/>
+        <Button Content="оформить" HorizontalAlignment="Left" Margin="171,256,0,0" VerticalAlignment="Top" Width="107" Click="Button_Click"/>
     </Grid>
 </Page>

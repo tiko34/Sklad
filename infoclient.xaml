@@ -11,17 +11,16 @@
     <Grid>
         <Button 
             HorizontalAlignment="Left"
-            Margin="10,10,0,0"
+            Margin="10,0,0,10"
            Click="Button_Click"
             ToolTip="Регистрация если клиент отсутствует в базе данных"
-            VerticalAlignment="Top"
-            Width="175" Height="25">
+            Width="179" Height="20" VerticalAlignment="Bottom">
             <TextBlock 
                 Text="Регистрация клиента"
                 TextWrapping="Wrap" />
         </Button>
         <DataGrid 
-            Margin="10,40,10,92" AutoGenerateColumns="False" x:Name="infoclientdb">
+            Margin="10,10,10,40" AutoGenerateColumns="False" x:Name="infoclientdb">
 
             <DataGrid.Columns >
                 <DataGridTextColumn 
@@ -62,7 +61,7 @@
                 <DataGridTextColumn 
                     IsReadOnly="True"
                     Header="Электронная почта"
-                                    Binding="{Binding e-mail}"
+                                    Binding="{Binding e_mail}"
                    
                                     Width="*">
 
@@ -70,7 +69,7 @@
                 <DataGridTemplateColumn x:Name="delclient" Header="Удаление" Width="70" Visibility="Hidden">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Button Click="Button_Click_1">
+                            <Button >
                                 <TextBlock
                                     Text="Удалить">
 
@@ -82,7 +81,7 @@
 
             </DataGrid.Columns>
         </DataGrid>
-        <Button Margin="0,0,10,48" Click="Button_Click_2" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75">
+        <Button Margin="0,0,10,10" Click="Button_Click_2" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="180">
             <TextBlock Text="Удалить">
 
             </TextBlock>

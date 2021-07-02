@@ -75,10 +75,11 @@ namespace Sklad
                         string phone = Convert.ToString(phonebox.Text);
                         string adres = Convert.ToString(addressbox.Text);
                         string inn = Convert.ToString(innbox.Text);
-                        string mail = Convert.ToString(namebox.Text);
+                        string mail = Convert.ToString(email.Text);
                         DT sl = new DT();
                         sl.Select($@"INSERT INTO Клиенты (Название,телефон,Адрес,ИНН,[e-mail]) VALUES ('{name}', '{phone}','{adres}','{inn}','{mail}')");
-                        MainWindow.GetWindow(openpage.MainFrame).Title = "Оптовый склад->Клиенты";
+                        MessageBox.Show("Успех", "Данные добавлены", MessageBoxButton.OK);
+                        Window.GetWindow(openpage.MainFrame).Title = "Оптовый склад->Клиенты";
                         openpage.MainFrame.Navigate(new infoclient());
 
                     }

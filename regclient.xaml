@@ -23,7 +23,7 @@
         <TextBox x:Name="phonebox" Margin="160,60,163,0" Height="20" VerticalAlignment="Top" TextChanged="phonebox_TextChanged" IsEnabled="True" IsReadOnly="False"/>
 
 
-        <TextBox  Margin="160,180,163,0" Height="20" VerticalAlignment="Top"/>
+        <TextBox  Margin="160,180,163,0" Height="20" VerticalAlignment="Top" x:Name="email"/>
 
         <Viewbox Height="24" HorizontalAlignment="Left" Width="105" VerticalAlignment="Top" Margin="50,63,0,0" Stretch="UniformToFill">
             <Label  >

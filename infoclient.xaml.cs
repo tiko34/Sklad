@@ -6,9 +6,7 @@ using System.Windows.Controls;
 
 namespace Sklad
 {
-    /// <summary>
-    /// Логика взаимодействия для infoclient.xaml
-    /// </summary>
+
     public partial class infoclient : Page
     {
         public infoclient()
@@ -23,15 +21,11 @@ namespace Sklad
             openpage.MainFrame.Navigate(new regclient());
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
           
-            if (MessageBox.Show($"Вы точно хотите удалить следуюшие запсии", "Внимание!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes) ;
+            if (MessageBox.Show($"Вы точно хотите удалить запись?", "Внимание!", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes) 
             {
                 try
                 {
@@ -42,11 +36,12 @@ namespace Sklad
                     infoclientdb.ItemsSource = null;
                     infoclientdb.ItemsSource = skladEntities.GetContext().Клиенты.ToList();
                 }
-                catch (Exception ex)
+                catch (Exception )
                 {
-                    MessageBox.Show(ex.Message.ToString());
+                    MessageBox.Show("Ошибка удаления записи", "Ошибка", MessageBoxButton.YesNo);
                 }
             }
+            
         }
     }
 }

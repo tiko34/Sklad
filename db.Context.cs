@@ -17,10 +17,43 @@ namespace Sklad
     
     public partial class skladEntities : DbContext
     {
+
+
+
+
+
+
+        private static skladEntities _context;
         public skladEntities()
             : base("name=skladEntities")
         {
         }
+        public static skladEntities GetContext()
+        {
+            if (_context == null)
+                _context = new skladEntities();
+            return _context;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
