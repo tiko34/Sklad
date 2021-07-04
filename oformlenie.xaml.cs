@@ -22,10 +22,10 @@ namespace Sklad
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
 
-          //  //Добавляет запись в табл заказ, обязательно включает в себя табл товар_заказ
-          // try
-          //{
-              DT sql = new DT();
+            //Добавляет запись в табл заказ, обязательно включает в себя табл товар_заказ
+            try
+            {
+                DT sql = new DT();
                 int opl = 0;
                 if(cvb.SelectedIndex == 0)
                 {
@@ -49,10 +49,7 @@ namespace Sklad
             int thaed = Convert.ToInt32(stoim.Text);//за ед товара
             int smm = kolvo * thaed;
             sql.Select($@"INSERT INTO заказ (idклиент, ВидОплаты, датасоставления,общаясумма) VALUES('{cl}','{opl}', '{st}' ,'{smm}')");
-            //DataTable idx = sql.Select("SELECT MAX(idзаказ) FROM заказ");//id заказ
-            // DataTable dt_user = sl.Select("SELECT Log,pass,приоритет FROM [Операторы]");
-
-        
+            int idx = 23;
 
             // добавление товар_заказ
             sql.Select($@"INSERT INTO Товар_Заказ (Наименование, idЗаказ, idТовар,колво,едизм,стоимзаед) VALUES('{yh}','{idx}', '{idtovr}' ,'{kolvo}','{edizm}','{thaed}')");
@@ -68,22 +65,22 @@ namespace Sklad
 
 
 
-            //      //////успех
-            //      MessageBox.Show("Успех","Данные добавлены",MessageBoxButton.OK);
-            //      openpage.MainFrame.Navigate(new sale());
-            //      Window.GetWindow(openpage.MainFrame).Title = "Оптовый склад->Торговля";
-            //  }
-            //catch (Exception)
-            //{
-            //    MessageBox.Show("Ошибка добавления записи", "Ошибка", MessageBoxButton.OK);
-
-            //}
-
-
-
-
-
+            //////успех
+            MessageBox.Show("Успех","Данные добавлены",MessageBoxButton.OK);
+            openpage.MainFrame.Navigate(new sale());
+            Window.GetWindow(openpage.MainFrame).Title = "Оптовый склад->Торговля";
         }
+            catch (Exception)
+            {
+                MessageBox.Show("Ошибка добавления записи", "Ошибка", MessageBoxButton.OK);
+
+            }
+
+
+
+
+
+}
 
     }
 }
